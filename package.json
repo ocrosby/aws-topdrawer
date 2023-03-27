@@ -1,0 +1,24 @@
+{
+  "name": "aws-lambda-tds",
+  "version": "1.0.0",
+  "description": "monorepo project for topdrawersoccer lambdas",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ocrosby/aws-lambda-tds.git"
+  },
+  "keywords": [
+    "TDS",
+    "TopDrawerSoccer",
+    "Lambda"
+  ],
+  "author": "Omar Crosby <omar.crosby@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ocrosby/aws-lambda-tds/issues"
+  },
+  "homepage": "https://github.com/ocrosby/aws-lambda-tds#readme"
+}
