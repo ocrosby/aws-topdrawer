@@ -1,10 +1,13 @@
 {
-  "name": "aws-lambda-tds",
+  "name": "root",
   "version": "1.0.0",
   "description": "monorepo project for topdrawersoccer lambdas",
   "main": "index.js",
+  "useWorkspaces": true,
   "scripts": {
-    "test": "npm run test"
+    "graph": "nx graph",
+    "build": "lerna run build",
+    "test": "lerna run test"
   },
   "repository": {
     "type": "git",
@@ -12,8 +15,7 @@
   },
   "keywords": [
     "TDS",
-    "TopDrawerSoccer",
-    "Lambda"
+    "TopDrawerSoccer"
   ],
   "author": "Omar Crosby <omar.crosby@gmail.com>",
   "license": "GPL-3.0-or-later",
