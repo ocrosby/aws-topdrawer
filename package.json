@@ -1,32 +1,30 @@
 {
-  "name": "root",
-  "version": "1.0.0",
-  "description": "monorepo project for topdrawersoccer lambdas",
-  "main": "index.js",
-  "useWorkspaces": true,
-  "scripts": {
-    "graph": "nx graph",
-    "build": "lerna run build",
-    "test": "lerna run test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ocrosby/aws-lambda-tds.git"
-  },
-  "keywords": [
-    "TDS",
-    "TopDrawerSoccer"
-  ],
-  "author": "Omar Crosby <omar.crosby@gmail.com>",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/ocrosby/aws-lambda-tds/issues"
-  },
-  "homepage": "https://github.com/ocrosby/aws-lambda-tds#readme",
-  "devDependencies": {
-    "lerna": "^6.6.1"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+    "name": "delete-test-01",
+    "description": "delete-test-01-description",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "@aws-sdk/client-dynamodb": "^3.188.0",
+        "@aws-sdk/lib-dynamodb": "^3.188.0"
+    },
+    "devDependencies": {
+        "aws-sdk-client-mock": "^2.0.0",
+        "jest": "^29.2.1"
+    },
+    "scripts": {
+        "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js"
+    },
+    "jest": {
+        "testMatch": [
+            "**/__tests__/**/*.[jt]s?(x)",
+            "**/?(*.)+(spec|test).[jt]s?(x)",
+            "**/__tests__/**/*.mjs?(x)",
+            "**/?(*.)+(spec|test).mjs?(x)"
+        ],
+        "moduleFileExtensions": [
+            "mjs",
+            "js"
+        ]
+    }
 }
+
